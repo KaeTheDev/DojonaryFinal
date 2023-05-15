@@ -6,7 +6,7 @@ function likeButton() {
 
 
 /* LOGOUT & LOGIN FUNCTIONALITY */
-const btn = document.getElementsByClassName(".nb-login-btn").innerText;
+// const btn = document.getElementsByClassName(".nb-login-btn").innerText;
 
 function login(element) {
     if (element.innerText == "Login") {
