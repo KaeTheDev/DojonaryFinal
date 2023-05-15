@@ -1,0 +1,114 @@
+:root {
+    --primary-gray: hsl(0, 0%, 51%);
+    --primary-blue: hsl(240, 100%, 50%);
+    --primary-yellow: hsl(60, 100%, 50%);
+    --primary-green: hsl(120, 100%, 50%);
+    --primary-white: hsla(0, 100%, 100%, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* HEADER CSS */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-gray);
+    padding: 20px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.nb-search {
+    width: 250px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.nb-login-btn {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    padding: 5px;
+    width: 60px;
+    box-shadow: 4px 4px black;
+}
+
+/*  CONTAINER */
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+
+/* MAIN SECTION - DOJONARY TERM CARDS */
+
+.dojonary-term-card {
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    gap: 10px;
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.dojonary-term-card__dojoword {
+    text-align: center;
+    width: 100px;
+}
+
+.dojonary-term__word {
+    font-size: x-large;
+}
+
+.dojonary-term__noun {
+    font-size: small;
+    margin-bottom: 5px;
+}
+
+.dojonary-term__plural {
+    font-size: x-small;
+    margin-bottom: 10px;
+}
+
+.dojonary-term__btn {
+    background-color: var(--primary-yellow);
+    padding: 5px;
+    width: 70px;
+    box-shadow: 2px 2px black;
+}
+
+/* Add Definiton Section */
+
+.dojonary-definition {
+    border: 3px solid black;
+    width: 160px;
+    height: 90px;
+    padding: 10px;
+}
+
+.dojonary-definition__def {
+    font-size:larger;
+    margin-bottom: 10px;
+}
+
+.add-definition__btn{
+    background-color: var(--primary-green);
+    padding: 5px;
+    width: 150px;
+    box-shadow: 2px 2px black;
+}

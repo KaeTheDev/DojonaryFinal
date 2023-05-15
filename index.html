@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojonary</title>
+</head>
+
+<body class="app">
+
+    <header class="header">
+        <h1>Dojonary</h1>
+        <input type="text" class="nb-search" placeholder="Search">
+        <button onclick="login(this)" class="nb-login-btn">Login</button>
+    </header>
+
+    <!--CONTAINER-->
+    <div class="container">
+        <main>
+            <div class="dojonary-term-card">
+                <div class="dojonary-term-card__dojoword">
+                    <p class="dojonary-term__word">ninja</p>
+                    <p class="dojonary-term__noun"> <i>noun</i></p>
+                    <p class="dojonary-term__plural"><i>Plural: ninjas</i> </p>
+                    <button onclick="likeButton()" class="dojonary-term__btn">13 likes</button>
+                </div>
+
+                <div class="dojonary-term-card__definition">
+                    <p>A practicioner skilled in the Japanese art of ninjutsu</p>
+                </div>
+            </div>
+
+            <div class="dojonary-term-card">
+                <div class="dojonary-term-card__dojoword">
+                    <p class="dojonary-term__word">ninja</p>
+                    <p class="dojonary-term__noun"><i>noun</i></p>
+                    <p class="dojonary-term__plural">Plural: ninjas</p>
+                    <button onclick="likeButton()" class="dojonary-term__btn">37 likes</button>
+                </div>
+
+                <div class="dojonary-term-card__definition">
+                    <p>A programmer who breaks down problems with zen-like focus</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="sidebar">
+            <div class="dojonary-definition">
+                <p class="dojonary-definition__def">Dojonary is defined by YOU</p>
+                <button onclick = "addDefinition(this)" class="add-definition__btn">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <!--CONTAINER END-->
+
+    <!--JAVASCRIPT-->
+    <script src="script.js"></script>
+</body>
+
+</html>
